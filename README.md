@@ -3,6 +3,14 @@ GNU/Linux 更换系统软件源脚本，感谢大佬开源，参考自 https://g
 
 ## 使用方法
 使用建议：速度上推荐`中科大`、`字节(火山引擎)`，地域兼容性上推荐`阿里云`、`腾讯云`，软件源种类上推荐`南京大学`、`中科院`，境外、海外或复杂网络环境下不建议使用`清华(TUNA)` 等容易阻断的学校镜像站。
+
+### 方法一：
+一键运行
+```
+bash <(curl -sSL https://raw.githubusercontent.com/Newbinstudy/LinuxUpdateSources/main/changesource.sh )
+```
+### 方法二：
+离线下载脚本
 ```
 curl -O https://raw.githubusercontent.com/Newbinstudy/LinuxUpdateSources/main/changesource.sh
 ```
