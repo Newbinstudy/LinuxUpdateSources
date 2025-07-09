@@ -1,9 +1,9 @@
 #!/bin/bash
 ## Author: SuperManito
-## Modified: 2025-07-02
+## Modified: 2025-07-09
+## Modified by Newbinstudy
 ## License: MIT
 ## GitHub: https://github.com/SuperManito/LinuxMirrors
-## Website: https://linuxmirrors.cn
 
 ## 定制方法
 # 只需要在头部（此处）定义全局变量即可，具体详见官网文档，简单写几个例子
@@ -150,21 +150,6 @@ mirror_list_intranet=(
     "mirrors.myhuaweicloud.com"
     "mirrors.ivolces.com"
 )
-
-## 赞助商广告
-#SPONSOR_ADS=(
-#    "1Panel · Linux 面板｜极简运维 ➜  \033[3mhttps://1panel.cn\033[0m"
-#    "多途云 · 智能化防护，每一次连接皆在安全之下 ➜  \033[3mhttps://www.duotuyun.com\033[0m"
-#    "毫秒镜像 · 专为中国开发者提供Docker镜像加速下载服务 ➜  \033[3mhttps://1ms.run\033[0m"
-#    "速拓云 · 国内高防云28元/月｜香港云100M优化线路9元/月 ➜  \033[3mhttps://www.sutuoyun.com\033[0m"
-#    "林枫云 · 专注独立IP高频VPS｜R9/i9系列定制 ➜  \033[3mhttps://www.dkdun.cn\033[0m"
-#    "云悠YUNYOO · 全球高性价比云服务器｜低至15.99元起 ➜  \033[3mhttps://yunyoo.cc\033[0m"
-#    "语鹿云盾 · 专业CDN加速、防御，亚太百兆三网优化CDN低至9元起 ➜  \033[3mhttps://www.lucdn.cn\033[0m"
-#    "不死鸟CDN · 香港日本高防CDN，免实名/免备案，轻松阻断DDOS/CC攻击 ➜  \033[3mhttps://www.bsncdn.org\033[0m"
-#    "不二云 · 国内外建站快响应服务器的不二之选 ➜  \033[3mhttps://cb2.cn\033[0m"
-#    "HKGserver · 全球家宽｜双ISP｜住宅原生云服务器54元/月起 ➜  \033[3mhttps://www.hkgserver.com\033[0m"
-#    "润信云 · 国内挂机宝海外云服务器低至9.9元/月 ➜  \033[3mhttps://www.runxinyun.com\033[0m"
-#)
 
 ##############################################################################
 
@@ -654,10 +639,9 @@ function run_start() {
         return
     fi
     echo -e "+-----------------------------------+"
-    echo -e "| \033[0;1;35;95m⡇\033[0m  \033[0;1;33;93m⠄\033[0m \033[0;1;32;92m⣀⡀\033[0m \033[0;1;36;96m⡀\033[0;1;34;94m⢀\033[0m \033[0;1;35;95m⡀⢀\033[0m \033[0;1;31;91m⡷\033[0;1;33;93m⢾\033[0m \033[0;1;32;92m⠄\033[0m \033[0;1;36;96m⡀⣀\033[0m \033[0;1;34;94m⡀\033[0;1;35;95m⣀\033[0m \033[0;1;31;91m⢀⡀\033[0m \033[0;1;33;93m⡀\033[0;1;32;92m⣀\033[0m \033[0;1;36;96m⢀⣀\033[0m |"
-    echo -e "| \033[0;1;31;91m⠧\033[0;1;33;93m⠤\033[0m \033[0;1;32;92m⠇\033[0m \033[0;1;36;96m⠇⠸\033[0m \033[0;1;34;94m⠣\033[0;1;35;95m⠼\033[0m \033[0;1;31;91m⠜⠣\033[0m \033[0;1;33;93m⠇\033[0;1;32;92m⠸\033[0m \033[0;1;36;96m⠇\033[0m \033[0;1;34;94m⠏\033[0m  \033[0;1;35;95m⠏\033[0m  \033[0;1;33;93m⠣⠜\033[0m \033[0;1;32;92m⠏\033[0m  \033[0;1;34;94m⠭⠕\033[0m |"
+    echo -e " 欢迎使用 GNU/Linux 更换系统软件源脚本 "
     echo -e "+-----------------------------------+"
-    echo -e "欢迎使用 GNU/Linux 更换系统软件源脚本"
+    
 }
 
 function run_end() {
@@ -665,15 +649,7 @@ function run_end() {
         echo ''
         return
     fi
-    echo -e "\n✨脚本运行完毕"
-   # if [[ "${#SPONSOR_ADS[@]}" -gt 0 ]]; then
-   #     echo -e "\n\033[2m【赞助商广告】\033[0m"
-   #     for ad in "${SPONSOR_ADS[@]}"; do
-   #         sleep 0.1
-   #         echo -e "  \033[2m${ad}\033[0m"
-   #     done
-   # fi
-   # echo -e "\n\033[3;1mPowered by \033[34mLinuxMirrors\033[0m\n"
+    echo -e "\n脚本运行完毕"
 }
 
 ## 报错退出
